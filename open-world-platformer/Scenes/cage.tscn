@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcmbn1w3g51e4"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nngtj"]
+a = Vector2(19, -1)
+b = Vector2(-27, -1)
+
+[node name="Cages" type="StaticBody2D"]
+position = Vector2(1, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("SegmentShape2D_nngtj")
+one_way_collision = true

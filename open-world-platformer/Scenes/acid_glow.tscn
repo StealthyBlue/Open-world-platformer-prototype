@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7aurgg8fh8wi"]
+
+[sub_resource type="Gradient" id="Gradient_m7och"]
+offsets = PackedFloat32Array(0, 0.0179641, 0.60479, 0.820359, 0.994012)
+colors = PackedColorArray(0.171749, 0.171749, 0.171749, 1, 1, 1, 1, 1, 0.0900901, 0.0900901, 0.0900901, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qvws2"]
+gradient = SubResource("Gradient_m7och")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 1)
+metadata/_snap_enabled = true
+
+[node name="AcidGlow" type="PointLight2D"]
+z_index = 2
+texture_filter = 1
+position = Vector2(1, 1)
+scale = Vector2(553.921, 159.684)
+color = Color(0.329412, 1, 0.137255, 1)
+energy = 1.71
+texture = SubResource("GradientTexture2D_qvws2")
+texture_scale = 0.01

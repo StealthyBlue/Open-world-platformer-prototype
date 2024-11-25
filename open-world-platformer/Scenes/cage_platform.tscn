@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl34hlvqfityb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_teqdn"]
+size = Vector2(44, 8)
+
+[node name="CagePlatform" type="CollisionShape2D"]
+position = Vector2(1455, -456)
+shape = SubResource("RectangleShape2D_teqdn")
+one_way_collision = true
